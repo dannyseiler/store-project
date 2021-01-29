@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #74b9ff;
+}
+/* TITULO */
+
+.nav-container {
+  width: 1200px;
+  margin: 30px auto;
+  padding-bottom: 5px;
+  font-size: 40px;
+  font-weight: 100;
+  background-color: #55efc4;
+  border: 1px solid #55efc4;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* CONTENEDOR DE TARJETAS */
+
+.main-container {
+  width: 1200px;
+  margin: 20px auto;
+  background-color: #55efc4;
+  border: 1px solid #55efc4;
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+/* TARJETAS */
+
+.card-container {
+  width: 300px;
+  height: 200px;
+  margin: 20px;
+  background-color: #1abc9c;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.card-container:hover {
+  width: 310px;
+  height: 210px;
+  margin: 15px;
+  background-color: #16a085;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* IMAGEN */
+
+.img-container {
+  margin: 20px auto;
+  width: 25%;
+  display: flex;
+  align-content: center;
+}
+
+.img-container {
+  animation: spin infinite 10s linear;
+}
+
+/* INFO DEL PRODUCTO */
+
+.info-container {
+  font-size: 20px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+/* MEDIA QUERYS */
+
+@media screen and (max-width: 1200px) {
+  .nav-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .main-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .card-container {
+    width: 250px;
+    height: 200px;
+  }
+  .card-container:hover {
+    width: 260px;
+    height: 210px;
+  }
+  .img-container {
+    width: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .main-container {
+    width: 90%;
+    margin: 20px auto;
+  }
+  .card-container {
+    width: 250px;
+    height: 200px;
+  }
+  .card-container:hover {
+    width: 260px;
+    height: 210px;
+  }
+  .img-container {
+    width: 35%;
+  }
+}
+
+/* KEYFRAMES */
+/*
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
